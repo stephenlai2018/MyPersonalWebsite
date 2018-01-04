@@ -1,0 +1,170 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A portfolio template that uses Material Design Lite.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>史帝芬賴的網站</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icon16.png" />
+    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+</head>
+<style>
+#item{
+    font-size:20px;
+  }
+  #title{
+    font-size:20px;
+      letter-spacing:1.5px;
+      line-height:1.5em;
+      color:#000;
+  }
+  @media (max-width:480px){
+    #menu{
+      font-size:20px;
+    }
+    #title{
+      font-size:18px;
+    }
+    label{
+    font-size:20px;
+  }
+  }
+  label{
+    font-size:18px;
+  }
+</style>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+            
+            <div class="mdl-layout__header-row portfolio-logo-row">
+              <a href="index.html">
+                <span class="mdl-layout__title">
+                    <div class="portfolio-logo"></div>
+                <span style="font-size:25px" class="mdl-layout__title">訪客留言</span>
+                </span>
+              </a>
+            </div>
+            
+            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                    <a id="item" class="mdl-navigation__link " href="bloq.html">部落格</a>
+                    <a id="item" class="mdl-navigation__link" href="about.html">關於我</a>
+                    <a id="item" class="mdl-navigation__link is-active" href="contact.html">訪客留言</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a id="menu" class="mdl-navigation__link is-active" href="bloq.html">部落格</a>
+                <a id="menu" class="mdl-navigation__link" href="about.html">關於我</a>
+                <a id="menu" class="mdl-navigation__link" href="contact.html">訪客留言</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="mdl-grid portfolio-max-width portfolio-contact">
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    
+                    <div class="mdl-card__media">
+                        <img class="article-image" src=" images/messageboard.jpg" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <p id="title">
+                          請留下您的寶貴意見, 我會盡快回覆的, 謝謝!
+                        </p>
+                       
+                        <!--form action="#" class=""-->
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="userid">
+                                <label class="mdl-textfield__label" for="Name">姓名...</label>
+                                <span class="mdl-textfield__error">Letters and spaces only</span>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="useremail" >
+                                <label class="mdl-textfield__label" for="Email">電子信箱...</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <textarea class="mdl-textfield__input" type="text" rows="5" id="usernote"></textarea>
+                                <label class="mdl-textfield__label" for="note">您的留言</label>
+                            </div>
+                            <p>
+                                <button id="btnSubmit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                    送出
+                                </button>
+                            </p>
+                       
+                    </div>
+                </div>
+            </div>
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">史帝芬賴的網站</div>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <ul class="mdl-mini-footer__link-list">
+                        
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyAJHikUpBWxolzT6kJ_hXfgeeX-ujBHDF8",
+        authDomain: "chatlive-77068-b992d.firebaseapp.com",
+        databaseURL: "https://chatlive-77068-b992d.firebaseio.com",
+        projectId: "chatlive-77068-b992d",
+        storageBucket: "chatlive-77068-b992d.appspot.com",
+        messagingSenderId: "113941647329"
+      };
+      firebase.initializeApp(config);
+      
+      var id = document.getElementById("userid");
+      var email = document.getElementById("useremail");
+      var note = document.getElementById("usernote");
+      var submit = document.getElementById("btnSubmit");
+      
+      submit.addEventListener("click", function(){
+        var userid = id.value;
+        var useremail = email.value;
+        var usernote = note.value;
+        var data = {          
+          電子信箱: useremail,
+          姓名: userid,
+          信息: usernote          
+        };
+        firebase.database().ref().push(data);
+        alert("您的留言已經成功傳送!!");
+        id.value = "";
+        email.value = "";
+        note.value = "";
+      });
+    
+    </script>
+</body>
+
+</html>
