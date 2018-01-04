@@ -34,6 +34,17 @@
 #item{
     font-size:20px;
   }
+#parent{
+  /*display:flex;*/
+}
+#child{
+  float:right;
+  clear:both;
+}
+#my-image{
+  width:100%;
+  /*background: url(images/id.png) no-repeat;*/
+}
 @media (max-width:480px){
     #menu{
       font-size:20px;
@@ -88,8 +99,12 @@ p{
                     </div>
 
                     <div class="mdl-grid portfolio-copy">
+                        
+                        
+                      <div id="my-image">
+                        <img style="float:right" src="images/photo.png">
                         <h3 id="header" class="mdl-cell mdl-cell--12-col mdl-typography--headline"><b>< 基本資料 ></b></h3>
-                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                        <div id="parent" class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
                             <p>中文姓名: 賴紹文</p>
                             <p>英文名字: Stephen Lai</p>
                             <p>性別: 男</p>
@@ -99,6 +114,9 @@ p{
                             <p>婚姻狀況: 未婚</p>
                             <p>身高體重: 176公分 65公斤</p>
                         </div>
+                      </div>
+                        
+                        
                     
                         <h3 id="header" class="mdl-cell mdl-cell--12-col mdl-typography--headline"><b>< 自傳 ></b></h3>
                         <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
@@ -131,7 +149,7 @@ p{
                                的前提下讓網頁技術滲透到所有角落. 調查顯示 Github 專案下載次數最多的是由 Javascript 開發的, 高達10幾億多次, 由此顯示出 Javascript 語言的重要性.
                             </p>
                             <p>
-                                &nbsp;&nbsp;&nbsp;&nbsp;現在的我從零開始, 從心並且重新出發, 拋開一切煩惱憂愁, 忘記背後, 努力面前, 向著標竿直跑. 人生是美好的, 是充滿希望的, 只要轉變心念, 天堂就在我們前面. 我希望能透過面試讓我被了解, 我也會盡最大努力工作, 
+                                &nbsp;&nbsp;&nbsp;&nbsp;現在的我從零開始, 從心並且重新出發, 拋開一切煩惱憂愁, 忘記背後, 努力面前, 向著標竿直跑. <!--人生是美好的, 是充滿希望的, 只要轉變心念, 天堂就在我們前面.--> 我希望能透過面試讓我被了解, 我也會盡最大努力工作, 
                                 不管是為公司獲利, 為個人經濟需求, 或為獲得成就感, 別人的肯定或自我價值的實現. 我的人生才開始, 未來是美好的.
                             </p>
                         </div>

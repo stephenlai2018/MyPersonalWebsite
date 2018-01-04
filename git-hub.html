@@ -1,0 +1,150 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A portfolio template that uses Material Design Lite.">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <title>史帝芬賴的網站</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icon16.png" />
+</head>
+<style>
+#item{
+    font-size:20px;
+  }
+  #para{
+    line-height: 1.5em; 
+    letter-spacing: 1px; 
+    font-size: 20px;
+    color:#000;
+  }
+ 
+  #text{
+    font-size: 20px;
+    
+  }
+  #button{
+    margin:0 auto;
+    width:150px;
+    height:auto;
+    border:2px solid lightgray;
+    border-radius:20px;
+    text-align:center;
+    padding:5px;
+    margin-bottom:20px;
+    box-shadow:10px 10px 5px -5px rgba(210,208,212,1);
+    font-size:15px;
+  }
+  a{
+    text-decoration:none;
+  }
+  @media (max-width:480px){
+    #menu{
+      font-size:20px;
+    }
+  }
+</style>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+            <div class="mdl-layout__header-row portfolio-logo-row">
+              <a href="index.html">
+                <span class="mdl-layout__title">
+                    <div class="portfolio-logo"></div>
+                    <!--span class="mdl-layout__title">Simple portfolio website</span-->
+                </span>
+              </a>
+            </div>
+            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                    <a id="item" class="mdl-navigation__link" href="bloq.html">部落格</a>
+                    <a id="item" class="mdl-navigation__link" href="about.html">關於我</a>
+                    <a id="item" class="mdl-navigation__link" href="contact.html">訪客留言</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a id="menu" class="mdl-navigation__link" href="bloq.html">部落格</a>
+                <a id="menu" class="mdl-navigation__link" href="about.html">關於我</a>
+                <a id="menu" class="mdl-navigation__link" href="contact.html">訪客留言</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="mdl-grid portfolio-max-width">
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">星際大戰8: 最後的絕地武士</h2>
+                    </div>
+                    <div class="mdl-card__media">
+                        <img class="article-image" src=" images/last-jedi.jpg" border="0" alt="">
+                    </div>
+                    <!--div class="mdl-card__supporting-text">
+                        <strong>Includes</strong>
+                        <span>Design, UX and Frontend Development</span>
+                    </div-->
+                    <div class="mdl-grid portfolio-copy">
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">觀影心得</h3>
+                        <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding">
+                            <p id="para">
+                              &nbsp;&nbsp;我認為"STAR WARS：最後的絕地武士"是星戰系列最精彩好看的一集, 我稱為"天行者路克傳奇最終章", 結局很感人, 星戰系列從1979到現在將近40年了, 路克, 莉亞公主, 韓索羅, R2D2, 陪著我們走過, 韓索羅在原力覺醒走了, 路克在這集為了拯救最後殘存的反抗軍也犧牲了, 新一代的絕地武士芮將會繼承絕地武士的精神和傳奇繼續帶領反抗軍對抗帝國. 
+                            </p>
+                            <p id="para">
+                              &nbsp;&nbsp;飾演絕地武士~芮的演員演技精湛, 是一位重情義, 意志堅定, 有正義感, 有愛心, 柔弱也剛強的女性, 讓本片增色不少. 反而是黑武士忍, 表現得很軟弱, 不得是不是導演設定的腳色這是這樣的個性, 所以有人批評忍是失敗的腳色. 不講我還不會特別去注意呢, 不過並沒有影響這部影片.
+                            </p>
+                            <p id="para">
+                              &nbsp;&nbsp;再來談觀影體驗, 絕佳的視覺效果, 震撼的音效, 扣人心弦的情節, 延續第一集以來的恩怨糾葛, 愛恨情仇, 很強的張力, 尤其最後的對決, 是全片最精彩的橋段, 我很佩服導演能想出如此的主意, 真的太精彩了. 路克最後和黑武士對抗說的那句話: "我不會是最後的絕地武士, 因為已經有比我更強大的絕地武士產生了", 真的超熱血的一句話. 星戰系列會有新的繼承者繼續不朽的傳奇故事. 如果沒有看過之前的系列可能會無法感受和體會, 可能會和許多人的感想一樣, 這只是部視覺特效/音效很棒但故事不知所云的電影. 所以也不能責怪給負評的人. 
+                              總之2019的最終章會把星戰系列做一個總結, 新一代絕地武士芮和新一代黑武士忍的最後對決, 反抗軍和帝國對抗的命運, 真的超讓人期待的. 
+                            </p>
+                            <p id="para">
+                              😭😭😭再見了天行者路克!
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="button">
+              <a href="bloq.html">
+                上一頁
+              </a>
+            </div>
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">史帝芬賴的網站</div>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <ul class="mdl-mini-footer__link-list">
+                        
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+
+</html>
