@@ -1,0 +1,31 @@
+{
+  "name": "我的網站",
+  "short_name": "我的網站",
+  "start_url": "index.html",
+  "orientation": "portrait",
+  "display": "fullscreen",
+  "theme_color": "skyblue",
+  "background_color": "skyblue",
+  "icons": [
+    {
+      "src": "images/icons/icon48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/icons/icon96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/icons/icon144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "images/icons/icon192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}
