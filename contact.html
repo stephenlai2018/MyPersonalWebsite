@@ -55,6 +55,11 @@
   label{
     font-size:18px;
   }
+  @media (min-width:1024px){
+    .hide-menu{
+      display:none;
+    }
+  }
 </style>
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -64,7 +69,7 @@
               <a href="index.html">
                 <span class="mdl-layout__title">
                     <div class="portfolio-logo"></div>
-                <span style="font-size:25px" class="mdl-layout__title">訪客留言</span>
+                <span class="hide-menu" style="font-size:25px" class="mdl-layout__title">訪客留言</span>
                 </span>
               </a>
             </div>

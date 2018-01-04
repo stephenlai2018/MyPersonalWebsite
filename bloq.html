@@ -36,6 +36,9 @@
     background:url("galaxy2.jpg");
     color:#fff;
   }
+  #bloq-title-image{
+    
+  }
   #title{
     color:#4747d1;
   }
@@ -56,6 +59,11 @@
     font-size:15px;
   }
   }
+  @media (min-width:1024px){
+    .hide-menu{
+      display:none;
+    }
+  }
 </style>
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -63,14 +71,14 @@
             
             <div class="mdl-layout__header-row portfolio-logo-row">
               <a href="index.html">
-                <span class="mdl-layout__title">
+                <span  class="mdl-layout__title">
                     <div class="portfolio-logo"></div>
-                    <span style="font-size:25px" class="mdl-layout__title">部落格</span>
+                    <span class="hide-menu" style="font-size:25px" class="mdl-layout__title">部落格</span>
                 </span>
               </a>
             </div>
              
-            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+            <div  class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
                 <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
                     <a id="item" class="mdl-navigation__link is-active" href="bloq.html">部落格</a>
                     <a id="item" class="mdl-navigation__link" href="about.html">關於我</a>
@@ -87,15 +95,15 @@
         </div>
         <main class="mdl-layout__content">
             <div class="mdl-grid portfolio-max-width">
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                <div style="height:auto" class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__media">
-                        <img class="article-image" src="images/the-last-jedi.jpg" border="0" alt="">
+                        <img id="bloq-title-image" class="article-image" src="images/the-last-jedi.jpg" border="0" alt="">
                     </div>
                     <div class="mdl-card__title">
-                        <h2 id="title" class="mdl-card__title-text"><b>< 最後的絕地武士 ></b></h2>
+                        <h2 id="title" class="mdl-card__title-text"><b>2017-12-23</b></h2>
                     </div>
                     <div id="text" class="mdl-card__supporting-text">
-                        我認為"STAR WARS：最後的絕地武士"是星戰系列最精彩好看的一集, 我稱為"天行者路克傳奇最終章", 結局很感人, 星戰系列從1979到現在將近40年了, 路克, 莉亞公主, 韓索羅, R2D2, 陪著我們走過, 韓索羅在原力覺醒走了, 路克在這集為了拯救最後殘存的反抗軍也犧牲了, 新一代的絕地武士芮將會繼承絕地武士的精神和傳奇繼續帶領反抗軍對抗帝國.....
+                        我認為"STAR WARS：最後的絕地武士"是星戰系列最精彩好看的一集, 我稱為"天行者路克傳奇最終章", 結局很感人, 星戰系列從1979到現在將近40年了, 路克, 莉亞公主, 韓索羅, R2D2, 陪著我們走過, 韓索羅在原力覺醒走了, 路克在這集為了拯救最後殘存的反抗軍也...
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
                         <a id="access" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">點此進入</a>
@@ -103,10 +111,10 @@
                 </div>
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__media">
-                        <img class="article-image" src=" images/happy-new-year.jpg" border="0" alt="">
+                        <img id="bloq-title-image" class="article-image" src=" images/happy-new-year.jpg" border="0" alt="">
                     </div>
                     <div class="mdl-card__title">
-                        <h2 id="title" class="mdl-card__title-text"><b>< 新年快樂 ></b></b></h2>
+                        <h2 id="title" class="mdl-card__title-text"><b>2018-1-1</b></b></h2>
                     </div>
                     <div id="text" class="mdl-card__supporting-text">
                         主耶穌保守你祝福你在新的一年中滿有神的恩惠和膏油，平安喜樂，生命更加散發基督馨香之氣成為世上光，願我主耶穌基督的恩惠與你同在與你的家人同在！ 耶和華以勒的神預備你新年的一切；耶和華尼西的神帶給你來年的得勝；耶和華沙龍的神賜給你每年的平安！...
@@ -117,13 +125,13 @@
                 </div>
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__media">
-                        <img class="article-image" src=" images/my-github.jpg" border="0" alt="">
+                        <img id="bloq-title-image" class="article-image" src=" images/my-github.jpg" border="0" alt="">
                     </div>
                     <div class="mdl-card__title">
-                        <h2 id="title" class="mdl-card__title-text"><b>< 我的Github ></b></h2>
+                        <h2 id="title" class="mdl-card__title-text"><b>2018-1-4</b></h2>
                     </div>
                     <div id="text" class="mdl-card__supporting-text">
-                        GitHub是全世界最受歡迎的程式碼管理/分享網站. 要說什麼是工程師的臉書，非GitHub莫屬。Github.com提供Git的代管服務，允許使用者在網站上存取程式碼、專案和Git版本管理。 除此之外，GitHub也提供了一些社交協作功能，包括能追蹤其他使用者或組織的專案動態、對程式碼的更動和Bug提出評論；如果你喜歡 ...
+                        GitHub是全世界最受歡迎的程式碼管理/分享網站. 要說什麼是工程師的臉書，非GitHub莫屬。Github.com提供Git的代管服務，允許使用者在網站上存取程式碼、專案和Git版本管理。 除此之外，GitHub也提供了一些社交協作功能，包括能追蹤其他使用者或...
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
                         <a id="access" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">點此進入</a>

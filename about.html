@@ -60,6 +60,11 @@ p{
     #header{
       color: #4747d1;
     }
+    @media (min-width:1024px){
+    .hide-menu{
+      display:none;
+    }
+  }
 </style>
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -69,7 +74,7 @@ p{
               <a href="index.html">
                 <span class="mdl-layout__title">
                     <div class="portfolio-logo"></div>
-                    <span style="font-size:25px" class="mdl-layout__title">關於我</span>
+                    <span class="hide-menu" style="font-size:25px" class="mdl-layout__title">關於我</span>
                 </span>
               </a>
             </div>
@@ -102,10 +107,12 @@ p{
                         
                         
                       <div id="my-image">
-                        <img style="float:right" src="images/photo.png">
+                        
                         <h3 id="header" class="mdl-cell mdl-cell--12-col mdl-typography--headline"><b>< 基本資料 ></b></h3>
                         <div id="parent" class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                            <img style="float:right; clear:both" src="images/myself.png">
                             <p>中文姓名: 賴紹文</p>
+                            
                             <p>英文名字: Stephen Lai</p>
                             <p>性別: 男</p>
                             <p>兵役狀況: 役畢</p>
@@ -113,12 +120,48 @@ p{
                             <p>出生日期: 1972年11月12日</p>
                             <p>婚姻狀況: 未婚</p>
                             <p>身高體重: 176公分 65公斤</p>
+                            
                         </div>
+                        
                       </div>
                         
                         
                     
-                        <h3 id="header" class="mdl-cell mdl-cell--12-col mdl-typography--headline"><b>< 自傳 ></b></h3>
+                        <h3 id="header" class="mdl-cell mdl-cell--12-col mdl-typography--headline"><b>< 中文自傳 ></b></h3>
+                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                            <!--p>
+                              &nbsp;&nbsp;&nbsp;&nbsp;時光飛逝, 日月如梭, 不知不覺已進入中年, 看到自己的兄弟姊妹, 親朋好友都有了家庭, 孩子, 扛起養家活口的任務, 看看自己, 一無所有, 連生活費都要向人家借, 
+                              不禁悲從中來, 回首以往, 宛如黃粱一夢. 常常問自己, 我的人生到底怎麼了? 時間能沖淡過去的傷痛, 不愉快的記憶, 但時間不是免費的, 青春歲月則是付出的代價. 生活是現實, 現實是生活; 錢不是萬能,
+                              但沒錢萬萬不能. 為了生活, 必須要工作, 不分年齡, 性別, 平凡人必須工作. 並且透過工作來得到自我價值的肯定. 
+                            </p-->
+                            <p>
+                               &nbsp;&nbsp;&nbsp;&nbsp;I've got my first job at the age of 31, it is later than any other people. Besides studying abraod, I was wondering around like a dockweed. I studied literature at high school and college, it is a time that Taiwan's
+                               electronics business boomed, GuangHua Shopping is a place where students would go. I was addicted to electronics though I didn't understand how they works. I saved a lot of money
+  
+                            </p>
+                            <p>
+                              &nbsp;&nbsp;&nbsp;&nbsp;回國後很順利地找到一家半導體公司擔任韌體工程師的工作, 不過並沒有做很久, 不到一年的時間就離職了. 然後很快地找到另一個軟體工程師的工作, 然而也待不久. 不到一年我又離開了. 之後同樣的情形繼續發生,
+                              總共五份工作每個都維持不到一年. 到底發生甚麼事? 為什麼我都待不久? 其實現在回想起來, 就會有很深的感觸. 第一份工作其實我能勝任, 因為公司用8051單晶片製作開發板, 我在美國學習Atmel單晶片, 要切入不同微控制器並不會很困難.
+                              而我也順利上手. 不過後來主管交付我一件任務, 要開發一個帶有作業系統的Demo板, 這對我來說是天方夜譚. 首先我並沒有學過計算機科學, 對作業系統毫無概念, 所以顯而易見的我根本無力完成這項任務, 於是在困惑中離職了.
+                              第二份工作從事智慧型手機驅動程式軟體維護. 這對我來說也是一個新的領域, 不過有一兩位同事甚至完全沒有軟體背景也加入開發團隊, 讓我信心增長不少. 不過因為只知道皮毛, 專業知識技術不足, 看C++程式代碼像看外星語言, 所以毅然而然離開.
+                            </p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;從這幾個軟韌體開發工作經驗, 我歸納出以下幾點我做不長久的原因: 第一: 除了在學校學得的專業知識技術外, 進入業界接觸到的是更為複雜龐大的系統及各種不同的軟體及開發技術, 所以要不斷的學習, 這點我就沒有做得很好.
+                               我除了從網路, 那時Google還不是主流, 我用Yahoo或Bing搜尋引擎搜尋到的資料都不能切中需要, 得到的很多都是錯誤的資料. 也因此無法突破進展. 第二: 我並沒有利用下班時間去上課, 所以新的技術比如作業系統, C++語言
+                               只有一知半解, 完全狀況外. 第三: 我在國外因為用英文學習, 所以有許多的觀念並不真正了解, 一旦遇到問題就卡住了. 第四: 在國外學習我偏重知識上的, 我考試都很高分, 然而我實驗課卻不重視, 有一部分原因是不懂實驗目的何在,
+                               這跟英文理解程度有關. 第五: 我不懂為何而戰, 為誰而戰; 不懂工作的意義是甚麼? 不懂許多人拼命努力工作賺錢養家背後的動機和目的. 
+                            </p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;檢討完畢後, 接下來的六年我在鐵路局度過, 這段期間正值新人進入挑戰資深員工, 不論學歷高低, 年紀及資歷, 都產生一定程度的火花. 也算是一段難忘的體驗. 為了不讓資深員工看扁, 我硬是待了六年多的時間, 不過這裡畢竟不屬於我的世界, 該走還是要走的.
+                               我休息三年多了, 這三年中我善用網路開源資料, 大量學習多樣技術, 包括一直讓我耿耿於懷的作業系統及C++程式語言, 及蓬勃發展的 Arduino, Raspberry等開源項目. 我深深了解網路科技的進步及重要性, 所以透過 Udemy 及 Youtube 等頻教學網站大量學習了網路技術如 HTML5, CSS3, Javascript 等前端技術,
+                               我了解 Javascript 是瀏覽器(網頁)唯一程式語言, 其重要性不言可喻. 所以我就選擇走 Javascript 路線, 從前端到後端, 遊戲到手機, Javascript 已經變成最受歡迎, 使用人數最多, 進化最快, 支援最多的程式語言. 而且各式各樣的框架和程式庫, 在"Write Less, and Do more", 或"Write once, run everywhere"
+                               的前提下讓網頁技術滲透到所有角落. 調查顯示 Github 專案下載次數最多的是由 Javascript 開發的, 高達10幾億多次, 由此顯示出 Javascript 語言的重要性.
+                            </p>
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;現在的我從零開始, 從心並且重新出發, 拋開一切煩惱憂愁, 忘記背後, 努力面前, 向著標竿直跑. <!--人生是美好的, 是充滿希望的, 只要轉變心念, 天堂就在我們前面.--> 我希望能透過面試讓我被了解, 我也會盡最大努力工作, 
+                                不管是為公司獲利, 為個人經濟需求, 或為獲得成就感, 別人的肯定或自我價值的實現. 我的人生才開始, 未來是美好的.
+                            </p>
+                        </div>
+                        
+                        <h3 id="header" class="mdl-cell mdl-cell--12-col mdl-typography--headline"><b>< 英文自傳 ></b></h3>
                         <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
                             <!--p>
                               &nbsp;&nbsp;&nbsp;&nbsp;時光飛逝, 日月如梭, 不知不覺已進入中年, 看到自己的兄弟姊妹, 親朋好友都有了家庭, 孩子, 扛起養家活口的任務, 看看自己, 一無所有, 連生活費都要向人家借, 
